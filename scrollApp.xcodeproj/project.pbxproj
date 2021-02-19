@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9973EEF9A9E22E52BF223047 /* Pods_scrollApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865C17CEAE435A5AFE72C8B7 /* Pods_scrollApp.framework */; };
+		BA92C98A25DFBD930086F816 /* 3.json in Resources */ = {isa = PBXBuildFile; fileRef = BA92C98725DFBD930086F816 /* 3.json */; };
+		BA92C98B25DFBD930086F816 /* 1.json in Resources */ = {isa = PBXBuildFile; fileRef = BA92C98825DFBD930086F816 /* 1.json */; };
+		BA92C98C25DFBD930086F816 /* 2.json in Resources */ = {isa = PBXBuildFile; fileRef = BA92C98925DFBD930086F816 /* 2.json */; };
+		BA92C98F25DFBDE60086F816 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA92C98E25DFBDE60086F816 /* NextViewController.swift */; };
 		BAFF9A8B25DFBC750094899D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFF9A8A25DFBC750094899D /* AppDelegate.swift */; };
 		BAFF9A8D25DFBC750094899D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFF9A8C25DFBC750094899D /* SceneDelegate.swift */; };
 		BAFF9A8F25DFBC750094899D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFF9A8E25DFBC750094899D /* ViewController.swift */; };
@@ -16,6 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43FFB4ED3042AD9DFA6AC9EE /* Pods-scrollApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scrollApp.debug.xcconfig"; path = "Target Support Files/Pods-scrollApp/Pods-scrollApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4992E8C27FA7FD32A7BA89B8 /* Pods-scrollApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scrollApp.release.xcconfig"; path = "Target Support Files/Pods-scrollApp/Pods-scrollApp.release.xcconfig"; sourceTree = "<group>"; };
+		865C17CEAE435A5AFE72C8B7 /* Pods_scrollApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_scrollApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA92C98725DFBD930086F816 /* 3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 3.json; sourceTree = "<group>"; };
+		BA92C98825DFBD930086F816 /* 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1.json; sourceTree = "<group>"; };
+		BA92C98925DFBD930086F816 /* 2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 2.json; sourceTree = "<group>"; };
+		BA92C98E25DFBDE60086F816 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		BAFF9A8725DFBC750094899D /* scrollApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scrollApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAFF9A8A25DFBC750094899D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAFF9A8C25DFBC750094899D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +43,65 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9973EEF9A9E22E52BF223047 /* Pods_scrollApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F6B61282852B8F6EBD96F0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				865C17CEAE435A5AFE72C8B7 /* Pods_scrollApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E7468847549DB876E1F46F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43FFB4ED3042AD9DFA6AC9EE /* Pods-scrollApp.debug.xcconfig */,
+				4992E8C27FA7FD32A7BA89B8 /* Pods-scrollApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BA92C98225DFBD100086F816 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BAFF9A8A25DFBC750094899D /* AppDelegate.swift */,
+				BAFF9A8C25DFBC750094899D /* SceneDelegate.swift */,
+				BAFF9A8E25DFBC750094899D /* ViewController.swift */,
+				BA92C98E25DFBDE60086F816 /* NextViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BA92C98425DFBD200086F816 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BAFF9A9025DFBC750094899D /* Main.storyboard */,
+				BAFF9A9325DFBC750094899D /* Assets.xcassets */,
+				BAFF9A9525DFBC750094899D /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA92C98525DFBD270086F816 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		BAFF9A7E25DFBC750094899D = {
 			isa = PBXGroup;
 			children = (
 				BAFF9A8925DFBC750094899D /* scrollApp */,
 				BAFF9A8825DFBC750094899D /* Products */,
+				9E7468847549DB876E1F46F9 /* Pods */,
+				8F6B61282852B8F6EBD96F0D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +116,13 @@
 		BAFF9A8925DFBC750094899D /* scrollApp */ = {
 			isa = PBXGroup;
 			children = (
-				BAFF9A8A25DFBC750094899D /* AppDelegate.swift */,
-				BAFF9A8C25DFBC750094899D /* SceneDelegate.swift */,
-				BAFF9A8E25DFBC750094899D /* ViewController.swift */,
-				BAFF9A9025DFBC750094899D /* Main.storyboard */,
-				BAFF9A9325DFBC750094899D /* Assets.xcassets */,
-				BAFF9A9525DFBC750094899D /* LaunchScreen.storyboard */,
+				BA92C98525DFBD270086F816 /* Model */,
+				BA92C98425DFBD200086F816 /* View */,
+				BA92C98225DFBD100086F816 /* Controller */,
 				BAFF9A9825DFBC750094899D /* Info.plist */,
+				BA92C98825DFBD930086F816 /* 1.json */,
+				BA92C98925DFBD930086F816 /* 2.json */,
+				BA92C98725DFBD930086F816 /* 3.json */,
 			);
 			path = scrollApp;
 			sourceTree = "<group>";
@@ -74,9 +134,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAFF9A9B25DFBC750094899D /* Build configuration list for PBXNativeTarget "scrollApp" */;
 			buildPhases = (
+				6A2A626735EB89461985912C /* [CP] Check Pods Manifest.lock */,
 				BAFF9A8325DFBC750094899D /* Sources */,
 				BAFF9A8425DFBC750094899D /* Frameworks */,
 				BAFF9A8525DFBC750094899D /* Resources */,
+				43DDCA94F73B32B5B021C431 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,7 +186,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA92C98B25DFBD930086F816 /* 1.json in Resources */,
 				BAFF9A9725DFBC750094899D /* LaunchScreen.storyboard in Resources */,
+				BA92C98C25DFBD930086F816 /* 2.json in Resources */,
+				BA92C98A25DFBD930086F816 /* 3.json in Resources */,
 				BAFF9A9425DFBC750094899D /* Assets.xcassets in Resources */,
 				BAFF9A9225DFBC750094899D /* Main.storyboard in Resources */,
 			);
@@ -132,12 +197,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		43DDCA94F73B32B5B021C431 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-scrollApp/Pods-scrollApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-scrollApp/Pods-scrollApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-scrollApp/Pods-scrollApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A2A626735EB89461985912C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-scrollApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BAFF9A8325DFBC750094899D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BAFF9A8F25DFBC750094899D /* ViewController.swift in Sources */,
+				BA92C98F25DFBDE60086F816 /* NextViewController.swift in Sources */,
 				BAFF9A8B25DFBC750094899D /* AppDelegate.swift in Sources */,
 				BAFF9A8D25DFBC750094899D /* SceneDelegate.swift in Sources */,
 			);
@@ -283,6 +391,7 @@
 		};
 		BAFF9A9C25DFBC750094899D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43FFB4ED3042AD9DFA6AC9EE /* Pods-scrollApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -296,12 +405,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tora.scrollApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		BAFF9A9D25DFBC750094899D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4992E8C27FA7FD32A7BA89B8 /* Pods-scrollApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,7 +425,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tora.scrollApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
